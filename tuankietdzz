@@ -1,0 +1,13 @@
+local settings = {
+   AutoChat_Time = 0.5,
+   AutoChat_Delay = 10,
+   AutoChat = true,
+}
+
+local chatrem = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
+
+while task.wait(settings.AutoChat_Time) do
+    chatrem:FireServer('NGUYEN TUAN KIET TAN CONG', "All")
+    print("Sent Message")
+end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tkietzzn1/script-blox-fruit-by-tuan-kiet/refs/heads/main/script%20blox%20fruit%20by%20tuan%20kiet"))()
